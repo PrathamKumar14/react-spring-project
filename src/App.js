@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Card from "./components/Card";
+import ImageSearch from "./components/ImageSearch";
 
 export default function App() {
   const [images, setImages] = useState([]);
@@ -9,7 +10,7 @@ export default function App() {
 
   useEffect(() => {
     fetch(
-      `https://pixabay.com/api/?key=15999269-626b46d15cba1aa1e0f2fe875&q=chess&image_type=photo&pretty=true`
+      `https://pixabay.com/api/?key=15999269-626b46d15cba1aa1e0f2fe875&q=${term}&image_type=photo&pretty=true`
     )
       .then(res => res.json())
       .then(data => {
@@ -22,9 +23,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <input type="text" placeholder="Search" />
-      <br />
-      <button type="submit">Submit</button>
+      <ImageSearch searchText={text => setTerm(text)} />
       {isLoading ? (
         <h1>Loading...</h1>
       ) : (
