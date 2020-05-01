@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(185, 180, 180, 0.616);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input,
+button {
+  width: 250px;
+  height: 30px;
+  background-color: rgba(112, 199, 233, 0.227);
+  border: 2px solid rgb(146, 144, 144);
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px rgb(148, 146, 146);
+}
+
+input {
+  margin-top: 30px;
+}
+
+button {
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
