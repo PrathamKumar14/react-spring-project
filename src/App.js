@@ -15,7 +15,6 @@ export default function App() {
       .then(res => res.json())
       .then(data => {
         setImages(data.hits);
-        console.log(data.hits);
         setIsLoading(false);
       })
       .catch(err => console.log(err));
@@ -25,6 +24,7 @@ export default function App() {
     <div className="App">
       <h1>Image Gallery</h1>
       <ImageSearch searchText={text => setTerm(text)} />
+      {!isLoading && images.length === 0 && <h1>Oops!! Nothing found</h1>}
       {isLoading ? (
         <h1>Loading...</h1>
       ) : (

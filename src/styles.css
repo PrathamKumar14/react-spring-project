@@ -1,5 +1,6 @@
 body {
   background-color: rgba(185, 180, 180, 0.616);
+  overflow-x: hidden;
 }
 
 .App {
@@ -8,31 +9,38 @@ body {
 }
 
 h1 {
+  font-family: sacramento;
   font-size: 5rem;
-  color: rgb(168, 164, 164);
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: rgb(119, 115, 115);
+  text-shadow: 0 1px 0 rgb(83, 83, 83), 0 2px 0 #4e4e4e, 0 3px 0 rgb(58, 58, 58),
+    0 4px 0 #3a3a3a, 0 5px 0 rgb(66, 66, 66), 0 6px 1px rgba(63, 63, 63, 0.1),
+    0 0 5px rgba(104, 104, 104, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 input,
 button {
   width: 250px;
-  height: 35px;
+  height: 40px;
   background-color: rgba(167, 172, 173, 0.227);
   border: 2px solid rgb(146, 144, 144);
   border-radius: 10px;
   box-shadow: 7px 7px 7px rgb(148, 146, 146);
+  text-align: center;
 }
 
 input {
   margin-top: 30px;
 }
 
+input::value {
+  text-align: center;
+}
+
 button {
   width: 80px;
+  height: 35px;
   margin-top: 5px;
   margin-bottom: 20px;
   border-radius: 40px;
