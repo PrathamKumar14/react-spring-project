@@ -1,11 +1,11 @@
 body {
   background-color: rgba(185, 180, 180, 0.616);
-  overflow-x: hidden;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
